@@ -28,7 +28,12 @@ class AkumulasiPage extends StatelessWidget {
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
             SizedBox(height: 20),
             AkumulasiRow(semester: "Semester 1", hours: "16 Jam"),
-            AkumulasiRow(semester: "Semester 2", hours: "12 Jam"),
+            AkumulasiRow(semester: "Semester 2", hours: "8 Jam"),
+            AkumulasiRow(semester: "Semester 3", hours: "4 Jam"),
+            AkumulasiRow(semester: "Semester 4", hours: "10 Jam"),
+            AkumulasiRow(semester: "Semester 5", hours: "12 Jam"),
+            AkumulasiRow(semester: "Semester 6", hours: "6 Jam"),
+            AkumulasiRow(semester: "Semester 7", hours: "2 Jam"),
             // Tambahkan row lainnya
             SizedBox(height: 10),
             Divider(),

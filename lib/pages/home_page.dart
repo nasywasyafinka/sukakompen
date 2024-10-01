@@ -34,7 +34,7 @@ class HomePage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Hasan",
+                      "Hasan Basri",
                       style:
                           TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     ),
@@ -93,15 +93,25 @@ class HomePage extends StatelessWidget {
             Text("Rekomendasi Kompen", style: TextStyle(fontSize: 18)),
             SizedBox(height: 10),
             KompenCard(
-                // Gunakan KompenCard yang sudah diimpor
-                title: "Arsip Absensi",
-                hours: "-14 Jam",
-                color: const Color.fromARGB(255, 255, 255, 255)!),
+              title: "Arsip Absensi",
+              hours: "-14 Jam",
+              color: const Color.fromARGB(255, 255, 255, 255),
+              boxDecoration: BoxDecoration(
+                border:
+                    Border.all(color: Colors.redAccent, width: 2), // Red border
+                borderRadius: BorderRadius.circular(8),
+              ),
+            ),
             KompenCard(
-                // Gunakan KompenCard yang sudah diimpor
-                title: "Rekap Nilai",
-                hours: "-10 Jam",
-                color: const Color.fromARGB(255, 255, 255, 255)!),
+              title: "Rekap Nilai",
+              hours: "-10 Jam",
+              color: const Color.fromARGB(255, 255, 255, 255),
+              boxDecoration: BoxDecoration(
+                border: Border.all(
+                    color: Colors.orangeAccent, width: 2), // Orange border
+                borderRadius: BorderRadius.circular(8),
+              ),
+            ),
           ],
         ),
       ),
