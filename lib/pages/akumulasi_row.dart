@@ -4,7 +4,7 @@ class AkumulasiRow extends StatelessWidget {
   final String semester;
   final String hours;
 
-  AkumulasiRow({required this.semester, required this.hours});
+  const AkumulasiRow({super.key, required this.semester, required this.hours});
 
   @override
   Widget build(BuildContext context) {
