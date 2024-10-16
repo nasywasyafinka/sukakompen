@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'ProfilePage.dart'; // Impor ProfilePage
 import 'akumulasi_page.dart'; // Impor AkumulasiPage
 import 'kompen_card.dart';
 
@@ -235,6 +236,8 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
+
+      // Bottom navigation bar
       bottomNavigationBar: BottomAppBar(
         shape: const CircularNotchedRectangle(),
         notchMargin: 5,
@@ -247,7 +250,7 @@ class HomePage extends StatelessWidget {
               IconButton(
                 icon: const Icon(Icons.home, color: Colors.white, size: 30),
                 onPressed: () {
-                  // Navigate to home
+                  // Stay on HomePage
                 },
               ),
               IconButton(
@@ -267,13 +270,19 @@ class HomePage extends StatelessWidget {
               IconButton(
                 icon: const Icon(Icons.person, color: Colors.white, size: 30),
                 onPressed: () {
-                  // Navigate to profile page
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const ProfilePage()),
+                  );
                 },
               ),
             ],
           ),
         ),
       ),
+
+      // Floating action button
       floatingActionButton: Container(
         width: 90, // Bigger size for the FAB
         height: 90,

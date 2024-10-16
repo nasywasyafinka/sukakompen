@@ -8,11 +8,26 @@ class AkumulasiRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    return Column(
       children: [
-        Text(semester),
-        Text(hours),
+        const Divider(color: Colors.grey, thickness: 1),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              semester,
+              style: const TextStyle(fontSize: 16),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(width: 8.0),
+            Text(
+              hours,
+              style: const TextStyle(fontSize: 16),
+              textAlign: TextAlign.center,
+            ),
+          ],
+        ),
+        const Divider(color: Colors.grey, thickness: 1),
       ],
     );
   }
